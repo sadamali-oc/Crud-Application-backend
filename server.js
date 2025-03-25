@@ -31,6 +31,7 @@ server.listen(3000, function check(error) {
   }
 });
 
+
 //Create the student Records
 
 server.post("/api/student/add", (req, res) => {
@@ -112,3 +113,4 @@ server.put("/api/student/update/:id", (req, res) => {
       }
     });
   })
+
