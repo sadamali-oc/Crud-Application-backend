@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
 const server = express();
-const cors = require('cors');
+const cors = require("cors");
 
 server.use(bodyParser.json());
 server.use(cors());
@@ -86,10 +86,10 @@ server.put("/api/student/update/:id", (req, res) => {
     req.body.course +
     "', fee='" +
     req.body.fee +
-    "', email='" + 
-    req.body.email +  // Added email
-    "', phone='" + 
-    req.body.phone +  // Added phone
+    "', email='" +
+    req.body.email + // Added email
+    "', phone='" +
+    req.body.phone + // Added phone
     "' WHERE id=" +
     req.params.id;
 
